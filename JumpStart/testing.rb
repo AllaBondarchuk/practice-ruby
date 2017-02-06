@@ -44,5 +44,17 @@ friends.each() do |friend|
   friend.concat(" is my friend!")
 end
 
-my_fav_drink = "Coffee"
-my_new_drink.Array = []
+#Hash Practice
+phonebook = Hash.new()
+phonebook.store("Alla", 2065518342)
+phonebook.store("Athena", 4253387656)
+phonebook.store("John", 4254435645)
+phonebook.fetch("Alla")
+#result: 2065528342
+
+dictionary = Hash.new()
+dictionary.store("Jazz", "Alla's cat")
+dictionary.store("Alla", "ADA Student")
+dictionary.store("Phone", "Iphone is the best")
+dictionary.fetch("Alla")
+#result: ADA Student
