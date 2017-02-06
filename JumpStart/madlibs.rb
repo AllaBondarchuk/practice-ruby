@@ -11,7 +11,7 @@ user_input = gets.chomp
 puts "Fill in the following blanks to complete our story:"
 
 puts "Pick a noun"
-noun.capitalize! = gets.chomp
+noun = gets.chomp
 puts "Pick an adjective"
 adj = gets.chomp
 puts "Pick an adverb"
@@ -21,6 +21,6 @@ number = gets.chomp
 puts "Pick a verb"
 verb.upcase = gets.chomp
 puts "Pick another noun"
-noun_2.capitalize! = gets.chomp
+noun_2 = gets.chomp
 puts "Pick a past-tense verb"
 past_verb = gets.chomp
