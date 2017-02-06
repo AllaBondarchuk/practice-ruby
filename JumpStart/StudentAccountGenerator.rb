@@ -18,6 +18,7 @@ end
 5.times do |i|
   emails << names[i].chr + names[i].split.last + idnumbers[i].to_s + "@adadev.org"
 end
+# ".to_s" converts integer into string, ".chr" take first letter of firstname
 
 5.times do |i|
   puts names [i] + "  " + idnumbers[i].to_s + "  " + emails[i]
