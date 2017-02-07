@@ -58,3 +58,33 @@ dictionary.store("Alla", "ADA Student")
 dictionary.store("Phone", "Iphone is the best")
 dictionary.fetch("Alla")
 #result: ADA Student
+
+#Histograms, Hash example, frequencies of word
+#iterating over an arrayputs
+puts "Please write something that is on your mind"
+text = gets.chomp
+words = text.split
+frequencies = Hash.new(0)
+words.each do |word| frequencies[word] += 1
+end
+#sort the frequency of each word inouted by the user
+frequencies = frequencies.sort_by { |k, v| v }
+frequencies.reverse!
+#next, iterate over .each key/value pair in the frequency hash.
+# then, puts each word, a single space, and its frequency to the console
+frequencies.each do |word, frequency|
+    puts word + " " + frequency.to_s
+end
+#result: Please write something that is on your mind
+#Hello my name is alla and I said hello!
+#hello! 1
+#said 1
+#I 1
+#and 1
+#alla 1
+#is 1
+#name 1
+#my 1
+#Hello 1
+#[["hello!", 1], ["said", 1], ["I", 1], ["and", 1], ["alla", 1], ["is", 1],
+# ["name", 1], ["my", 1], ["Hello", 1]]
