@@ -5,22 +5,20 @@ voters = gets.chomp.to_i
 
 puts "The Election Candidates are: Alla, Nina, and Tanya"
 
-a=0
-n=0
-t=0
+a = 0
+n = 0
+t = 0
 
 voters.times do
   puts "Who are you voting for?"
   vote = gets.chomp
     if vote.downcase == "Alla"
-      a = a+1
+      a = a + 1
     elsif vote.downcase == "Nina"
-      n = n+1
+      n = n + 1
     elsif vote.downcase == "Tanya"
-      t = t+1
+      t = t + 1
     end
-
-  end
 
   puts "AND THE WINNER ISSSS...."
 
@@ -56,7 +54,7 @@ puts "Vote Summary:"
 
 print "Alla: "
 print a
-if a > 1 #handle grammer of vote summary
+if a > 1 #handle grammar of vote summary
   puts " votes"
 else
   puts " vote"
@@ -78,7 +76,6 @@ else
   puts " vote"
 end
 
-
 if a > t && a > n
   puts "Winner: Alla!"
 elsif n > a && n > t
@@ -93,4 +90,5 @@ elsif t == n && t > a
   puts "Tied Winners: Tanya and Nina!"
 elsif a == t && a == n
   puts "Tied Winners: Alla, Tanya and Nina!"
+end
 end
